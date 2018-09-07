@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700');
+
+* {
+    font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+header,
+footer,
+section,
+article {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+@media  (min-width: map-get($grid-breakpoints, "md")) and (max-width: map-get($grid-breakpoints, "lg")) {
+
+}
+
+@media (max-width: map-get($grid-breakpoints, "md")) {
+
+}
+
+@media (max-width: map-get($grid-breakpoints, "sm")) {
+
+}
