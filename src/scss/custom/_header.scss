@@ -1,0 +1,206 @@
+header {
+
+    .navbar-top {
+        
+        .content-bg {
+            width: 100%;
+            padding: 12px 40px;
+            background-color: #b90118;
+
+            ul {
+                padding-left: 0px;
+                margin-bottom: 0px;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+    
+                li {
+                    margin: 0px 13px;
+    
+                    a {
+                        text-decoration: none;
+                        color: #FFF;
+                    }
+    
+                    &:last-child {
+                        margin-right: 0px;
+    
+                        a {
+    
+                            img {
+                                max-width: 25px;
+                            }
+    
+                            &:last-child {
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar {
+        padding: 0px;
+        background-color: transparent !important;
+
+        .container {
+            padding-right: 15px;
+            padding-left: 15px;
+
+            .content-bg {
+                width: 100%;
+                padding: 0px 40px;
+                background-color: #FFF;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+
+                .navbar-brand {
+                    margin: 0px;
+                    padding: 25px 40px 30px 0px;
+                    border-right: 1px solid #E3E3E3;
+        
+                    .img-fluid {
+                        max-width: 200px;                
+                    }
+                }
+
+                .navbar-collapse {
+
+                    .navbar-nav {
+                        
+                        .nav-item {
+
+                            .nav-link {
+                                padding-right: 0.6rem;
+                                padding-left: .6rem;
+                                text-transform: uppercase;
+                                line-height: 22px;
+                                font-weight: 900;
+                                font-size: 13px;
+                                color: #4A4A4A;
+                            }
+
+                            &.active {
+
+                                .nav-link {
+
+                                }
+                            }
+
+                            &:last-child {
+
+                                .nav-link {
+                                    padding-right: 0rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media  (min-width: map-get($grid-breakpoints, "lg")) and (max-width: map-get($grid-breakpoints, "xl")) {
+
+    header {
+
+        .navbar {
+
+            .container {
+
+                .content-bg {
+                    
+                    .navbar-collapse {
+
+                        .navbar-nav {
+                            
+                            .nav-item {
+
+                                .nav-link {
+                                    padding-right: .3rem;
+                                    padding-left: .3rem;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: map-get($grid-breakpoints, "lg")) {
+
+    header {
+
+        .navbar-top {
+
+            .content-bg {
+                padding: 12px 20px;
+            }
+        }
+        
+        .navbar {
+            
+            .container {
+                
+                .content-bg {
+                    padding: 0px 20px;
+                    
+                    .navbar-brand {
+                        padding: 20px 40px 20px 0px;
+                        border-right: none;
+                    }
+
+                    .navbar-collapse {
+                        padding: 5px 0px;
+                        border-top: 1px solid #E3E3E3;
+
+                        .navbar-nav {
+                            
+                            .nav-item {
+
+                                .nav-link {
+                                    padding-right: 0rem;
+                                    padding-left: 0rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: map-get($grid-breakpoints, "sm")) {
+
+    header {
+
+        .navbar {
+
+            .container {
+                padding-right: 0px;
+                padding-left: 0px;
+
+                .content-bg {
+
+                    .navbar-brand {
+            
+                        .img-fluid {
+                            max-width: 150px;                
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
