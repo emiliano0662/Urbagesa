@@ -1,4 +1,36 @@
 .home-banner {
 
+    h1 {
+        margin: 0px 0px 10px 0px;
+        text-transform: uppercase;
+        line-height: 60px;
+        font-weight: 900;
+        font-size: 60px;
+        color: #FFFFFF;
+    }
     
+    p {
+        margin: 0px 0px 25px 0px;
+        text-transform: uppercase;
+        line-height: 24px;
+        font-size: 20px;
+        color: #FFFFFF;
+        opacity: 0.9;
+    }
+
+    .d-flex {
+        justify-content: center;
+
+        .btn {
+            text-transform: uppercase;
+            line-height: 18px;
+            font-size: 15px;
+            color: #FFF;
+            border-color: #B90118;
+            background-color: #B90118;
+            -webkit-border-radius: 17px;
+            -moz-border-radius: 17px;
+            border-radius: 17px;
+        }
+    }
 }
