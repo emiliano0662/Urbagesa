@@ -1,36 +1,127 @@
 .home-banner {
+    margin-top: 20px;
 
-    h1 {
-        margin: 0px 0px 10px 0px;
-        text-transform: uppercase;
-        line-height: 60px;
-        font-weight: 900;
-        font-size: 60px;
-        color: #FFFFFF;
-    }
-    
-    p {
-        margin: 0px 0px 25px 0px;
-        text-transform: uppercase;
-        line-height: 24px;
-        font-size: 20px;
-        color: #FFFFFF;
-        opacity: 0.9;
-    }
+    .content-bg {
+        padding: 40px 100px;
+        background: transparent url('../img/bg-home-banner.jpg') center center / cover no-repeat;
 
-    .d-flex {
-        justify-content: center;
-
-        .btn {
+        h1 {
+            margin: 0px 0px 10px 0px;
             text-transform: uppercase;
-            line-height: 18px;
-            font-size: 15px;
-            color: #FFF;
-            border-color: #B90118;
-            background-color: #B90118;
-            -webkit-border-radius: 17px;
-            -moz-border-radius: 17px;
-            border-radius: 17px;
+            line-height: 60px;
+            font-weight: 900;
+            font-size: 60px;
+            color: #FFFFFF;
+        }
+        
+        p {
+            margin: 0px 0px 25px 0px;
+            text-transform: uppercase;
+            line-height: 24px;
+            font-size: 20px;
+            color: #FFFFFF;
+            opacity: 0.9;
+        }
+    
+        .d-flex {
+            justify-content: center;
+    
+            .btn {
+                padding: .375rem 2.5rem .375rem 1.75rem;
+                text-transform: uppercase;
+                line-height: 18px;
+                font-size: 15px;
+                color: #FFF;
+                border-color: #B90118;
+                background-color: #B90118;
+                -webkit-border-radius: 17px;
+                -moz-border-radius: 17px;
+                border-radius: 17px;
+
+                .fa {
+                    margin-top: -3px;
+                    margin-left: 13px;
+                    position: absolute;
+                    font-size: 25px;
+                }
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            .dropdown-menu {
+                width: 100%;
+                max-width: 255px;
+                padding: 1.3rem 0rem;
+                transform: translate3d(10px, 30px, 0px) !important;
+                box-shadow: 0px 2px 2px 4px rgba(0,0,0,0.1);
+                -webkit-border-radius: 0px;
+                -moz-border-radius: 0px;
+                border-radius: 0px;
+
+                .dropdown-item {
+                    text-transform: uppercase;
+                    line-height: 24px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #9B9B9B;
+
+                    &:hover {
+                        background-color: #FFF;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.home-pharmacies {
+    
+    .content-bg {
+        padding: 15px 22px 0px 22px;
+        background-color: #FFF;
+
+        .col-12 {
+            padding-right: 8px;
+            padding-left: 8px;
+        }
+    }
+}
+
+@media (max-width: map-get($grid-breakpoints, "md")) {
+
+    .home-banner {
+
+        .content-bg {
+            padding: 40px 20px;
+
+            h1 {
+                text-align: center;
+                line-height: 40px;
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: map-get($grid-breakpoints, "sm")) {
+
+    .home-banner {
+
+        .content-bg {
+            padding: 30px 20px;
+
+            h1 {
+                line-height: 30px;
+                font-size: 30px;
+            }
+
+            p {
+                text-align: center;
+                line-height: 18px;
+                font-size: 15px;
+            }
         }
     }
 }

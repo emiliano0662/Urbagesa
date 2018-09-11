@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700,900|Roboto:400,900');
 
 * {
     font-family: 'Raleway', sans-serif;
@@ -20,14 +20,220 @@ article {
 	position: relative;
 }
 
+.block-title {
+	margin-top: 20px;
+	border-bottom: 1px solid #E3E3E3;
+
+	h2 {
+		margin: 0px;
+		padding: 25px 30px;
+		border-left: 7px solid #B90118;
+		text-transform: uppercase;
+		line-height: 22px;
+		font-weight: 900;
+		font-size: 14px;
+		color: #4A4A4A;
+		background-color: #FFF;
+	}
+}
+
+.content-items-pharmacies {
+	margin-bottom: 15px;
+	padding: 20px 20px 25px 20px;
+	border: 1px solid #E3E3E3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	.pounter-content {
+		text-decoration: none;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			margin: 0px 0px 15px 0px;
+		}
+
+		h4 {
+			margin: 0px 0px 15px 0px;
+			letter-spacing: -0.38px;
+			line-height: 16px;
+			font-size: 20px;
+			color: #212529;
+			opacity: 0.9;
+
+			span {
+				line-height: 22px;
+				font-size: 16px;
+				color: #A0A0A0;
+			}
+		}
+
+		h3 {
+			margin: 0px;
+			letter-spacing: -0.38px;
+			line-height: 24px;
+			font-size: 20px;
+			color: #212529;
+			opacity: 0.9;
+		}
+
+		b {
+			margin: 0px;
+			font-family: 'Roboto', sans-serif;
+			line-height: 22px;
+			font-weight: 900;
+			font-size: 19px;
+			color: #B90118;
+		}
+
+		p {
+			margin: 15px 0px 15px 0px;
+			letter-spacing: -0.38px;
+			line-height: 17px;
+			color: #212529;
+			font-size: 20px;
+			opacity: 0.9;
+
+			span {
+				text-transform: uppercase;
+				line-height: 22px;
+				font-size: 16px;
+				color: #4A4A4A;
+			}
+		}
+	}
+
+	.pounter-content-hover {
+		position: absolute;
+		padding: 12px 20px;
+		border: 1px solid #A0A0A0;
+		background-color: rgba(255,255,255,0.8);
+		-webkit-border-radius: 9px;
+		-moz-border-radius: 9px;
+		border-radius: 9px;
+		display: none;
+
+		.fa {
+			font-size: 30px;
+			color: #a0a0a0;
+		}
+	}
+
+	&:hover {
+		box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+		background-color: rgba(179,179,179,0.2);
+
+		.pounter-content-hover {
+			display: block;
+		}
+	}
+}
+
+.content-btn-see-more-pharmacies {
+	padding: 25px 0px 70px 0px;
+
+	.btn-primary {
+		padding: .375rem 3rem;
+		text-transform: uppercase;
+		line-height: 18px;
+		font-size: 15px;
+		color: #FFF;
+		border-color: #B90118;
+		background-color: #B90118;
+		-webkit-border-radius: 17px;
+		-moz-border-radius: 17px;
+		border-radius: 17px;
+	}
+}
+
+.block-urbagesa-pharmacies {
+	margin-top: 20px;
+
+	.content-bg {
+		background: transparent url('../img/bg-block-urbagesa-pharmacies.jpg') center center / cover no-repeat;
+		
+		h2 {
+			margin: 0px 0px 40px 0px;
+			padding-bottom: 25px;
+			text-align: right;
+			text-transform: uppercase;
+			line-height: 60px;
+			font-weight: 900;
+			font-size: 45px;
+			color: #FFF;
+			background: transparent url('../img/bg-block-urbagesa-pharmacies-title.jpg') bottom right / 110px 2px no-repeat;
+		}
+		
+		p {
+			margin: 0px 0px 25px 0px;
+			text-align: right;
+			line-height: 22px;
+			font-size: 16px;
+			color: #FFF;
+		}
+		
+		.btn {
+			margin: 0px;
+			padding: .375rem 2rem;
+			text-transform: uppercase;
+			line-height: 18px;
+			font-size: 15px;
+			color: #FFF;
+			border-color: #B90118;
+			background-color: #B90118;
+			-webkit-border-radius: 17px;
+			-moz-border-radius: 17px;
+			border-radius: 17px;
+		}
+
+		.content-bg-internal {
+			padding: 35px 70px 35px 80px;
+			background-color: rgba(0,0,0,0.4);
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			justify-content: flex-end;
+		}
+	}
+}
+
 @media  (min-width: map-get($grid-breakpoints, "md")) and (max-width: map-get($grid-breakpoints, "lg")) {
 
 }
 
 @media (max-width: map-get($grid-breakpoints, "md")) {
 
+	.block-urbagesa-pharmacies {
+
+		.content-bg {
+			
+			h2 {
+				text-align: center;
+				line-height: 50px;
+				background: transparent url('../img/bg-block-urbagesa-pharmacies-title.jpg') bottom center / 110px 2px no-repeat;
+			}
+			
+			p {
+				text-align: justify;
+			}
+
+			.content-bg-internal {
+				padding: 25px 20px 35px 20px;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+	}
 }
 
 @media (max-width: map-get($grid-breakpoints, "sm")) {
 
+	.container {
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+	}
 }
