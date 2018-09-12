@@ -46,6 +46,10 @@
             border-radius: 0px;
         }
 
+        textarea {
+            height: auto !important;
+        }
+
         &.form-check-valid {
             margin-top: 2rem;
             margin-bottom: 1rem;

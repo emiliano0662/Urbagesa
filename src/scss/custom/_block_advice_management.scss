@@ -1,0 +1,45 @@
+.block-advice-management {
+
+    .content-bg {
+        padding: 15px 80px 15px 15px;
+        background-color: #FFF;
+
+        .img-fluid {
+            width: 100%;
+        }
+
+        p {
+            margin: 0px 0px 20px 0px;
+            line-height: 22px;
+            font-size: 16px;
+            color: #000000;
+        }
+        
+        .btn-primary {
+            padding: .375rem 2rem;
+            text-transform: uppercase;
+            line-height: 18px;
+            font-size: 15px;
+            color: #FFF;
+            border-color: $primary-color-red;
+            background-color: $primary-color-red;
+            -webkit-border-radius: 17px;
+            -moz-border-radius: 17px;
+            border-radius: 17px;
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    
+    .block-advice-management {
+
+        .content-bg {
+            padding: 15px;
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
+}

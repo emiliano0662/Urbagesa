@@ -1,0 +1,99 @@
+.block-news-list {
+
+    .content-bg {
+        padding: 20px;
+        background-color: #FFF;
+
+        h2 {
+            margin: 10px 0px 50px 0px;
+            text-transform: uppercase;
+            line-height: 30px;
+            font-weight: 900;
+            font-size: 25px;
+            color: #2D3738;
+        }
+
+        .img-fluid {
+            width: 100%;
+        }
+        
+        .content-items-news-list {
+            padding: 30px;
+            margin-bottom: 30px;
+            background-color: #F7F7F7;
+
+            p {
+                margin: 0px;
+                letter-spacing: -0.38px;
+                line-height: 24px;
+                font-size: 20px;
+                color: #212529;
+                opacity: 0.9;
+            }
+
+            small {
+                margin: 0px;
+                font-family: 'Roboto', sans-serif;
+                line-height: 22px;
+                font-weight: 500;
+                font-size: 14px;
+                color: #9B9B9B;
+            }
+        }
+        
+        .pagination {
+            margin: 20px 0px 50px 0px;
+
+            .page-item {
+                
+                .page-link {
+                    margin: 0px 5px;
+                    padding: .4rem .8rem;
+                    border: none;
+                    font-family: 'Roboto', sans-serif;
+                    line-height: 22px;            
+                    font-size: 16px;
+                    color: #9B9B9B;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    border-radius: 50%;
+                }
+
+                &.type-one,
+                &.type-two {
+
+                    .page-link {
+                        margin: 0px;
+                        font-size: 13px;
+                    }
+                }
+
+                &.active {
+
+                    .page-link {
+                        color: #FFF;
+                        background-color: #B90118;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+
+    .block-news-list {
+
+        .content-bg {
+            
+            .content-items-news-list {
+                padding: 15px;
+
+                p {
+                    line-height: 20px;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}

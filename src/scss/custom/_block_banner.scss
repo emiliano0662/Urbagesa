@@ -4,8 +4,13 @@
     .content-bg {
         padding: 40px 100px;
         background: transparent url('../img/bg-home-banner.jpg') center center / cover no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
 
         h1 {
+            width: 100%;
             margin: 0px 0px 10px 0px;
             text-transform: uppercase;
             line-height: 60px;
@@ -13,17 +18,29 @@
             font-size: 60px;
             color: #FFFFFF;
         }
+
+        small {
+            width: 100%;
+            margin: 0px 0px 13px 0px;
+            text-transform: uppercase;
+            line-height: 30px;
+            font-weight: 600;
+            font-size: 30px;
+            color: #FFFFFF;
+        }
         
         p {
+            width: 100%;
             margin: 0px 0px 25px 0px;
             text-transform: uppercase;
             line-height: 24px;
-            font-size: 20px;
+            font-size: 19px;
             color: #FFFFFF;
             opacity: 0.9;
         }
     
         .d-flex {
+            width: 100%;
             justify-content: center;
     
             .btn {
@@ -73,6 +90,22 @@
                 }
             }
         }
+
+        &.type-two {
+            background: transparent url('../img/img-advice-management.jpg') center center / cover no-repeat;
+
+            h1 {
+                margin: 15px 0px 10px 0px;
+            }
+        }
+
+        &.type-three {
+            background: transparent url('../img/img-advice-management.jpg') center center / cover no-repeat;
+        }
+
+        &.type-four {
+            background: transparent url('../img/img-advice-management.jpg') center center / cover no-repeat;
+        }
     }
 }
 
@@ -82,9 +115,9 @@
 
         .content-bg {
             padding: 40px 20px;
+            text-align: center;
 
             h1 {
-                text-align: center;
                 line-height: 40px;
                 font-size: 40px;
             }
@@ -104,8 +137,12 @@
                 font-size: 30px;
             }
 
+            small {
+                line-height: 22px;
+                font-size: 22px;
+            }
+
             p {
-                text-align: center;
                 line-height: 18px;
                 font-size: 15px;
             }

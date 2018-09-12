@@ -46,6 +46,26 @@
 			align-items: flex-end;
 			justify-content: flex-end;
 		}
+
+	}
+	
+	&.type-about-us {
+
+		.content-bg {
+			background: transparent url('../img/img-block-about-us.jpg') center center / cover no-repeat;
+
+			h2 {
+				margin: 0px 0px 35px 0px;
+			}
+
+			p {
+				margin: 0px 0px 35px 0px;
+			}
+
+			.content-bg-internal {
+				padding: 35px 70px 35px 10px;
+			}
+		}
 	}
 }
 
@@ -57,18 +77,33 @@
 			
 			h2 {
 				text-align: center;
-				line-height: 50px;
+				line-height: 40px;
+				font-size: 30px;
 				background: transparent url('../img/bg-block-urbagesa-pharmacies-title.jpg') bottom center / 110px 2px no-repeat;
 			}
 			
 			p {
-				text-align: justify;
+				text-align: center;
 			}
 
 			.content-bg-internal {
 				padding: 25px 20px 35px 20px;
 				align-items: center;
 				justify-content: center;
+			}
+		}
+
+		&.type-about-us {
+	
+			.content-bg {
+
+				p {
+					text-align: center;
+				}
+	
+				.content-bg-internal {
+					padding: 25px 20px 35px 20px;
+				}
 			}
 		}
 	}
