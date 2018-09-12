@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700,900|Roboto:400,900');
+
+* {
+    font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+body {
+	overflow-x: hidden;
+	background-color: #e3e3e3;
+}
+
+header,
+footer,
+section,
+article {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+/*Colors*/
+$primary-color-red: #B90118;
+
+/*Margins*/
+$section-margin-top: 20px;
+
+@include media-breakpoint-down(sm) {
+
+	.container {
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+	}
+}

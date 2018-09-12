@@ -1,5 +1,5 @@
 footer {
-    margin-top: 20px;
+    margin-top: $section-margin-top;
     
     .content-bg {
         padding: 0px 120px;
@@ -40,7 +40,7 @@ footer {
     }
 }
 
-@media (max-width: map-get($grid-breakpoints, "lg")) {
+@include media-breakpoint-down(lg) {
     
     footer {
     
@@ -50,7 +50,7 @@ footer {
     }
 }
 
-@media (max-width: map-get($grid-breakpoints, "md")) {
+@include media-breakpoint-down(md) {
     
     footer {
     

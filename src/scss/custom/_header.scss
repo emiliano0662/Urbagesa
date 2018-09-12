@@ -5,7 +5,7 @@ header {
         .content-bg {
             width: 100%;
             padding: 12px 40px;
-            background-color: #b90118;
+            background-color: $primary-color-red;
 
             ul {
                 padding-left: 0px;
@@ -84,12 +84,16 @@ header {
                                 font-weight: 900;
                                 font-size: 13px;
                                 color: #4A4A4A;
+
+                                &:hover {
+                                    color: $primary-color-red;
+                                }
                             }
 
                             &.active {
 
                                 .nav-link {
-
+                                    color: $primary-color-red;
                                 }
                             }
 
@@ -107,7 +111,7 @@ header {
     }
 }
 
-@media  (min-width: map-get($grid-breakpoints, "lg")) and (max-width: map-get($grid-breakpoints, "xl")) {
+@include media-breakpoint-only(lg) {
 
     header {
 
@@ -137,7 +141,7 @@ header {
     }
 }
 
-@media (max-width: map-get($grid-breakpoints, "lg")) {
+@include media-breakpoint-down(md) {
 
     header {
 
@@ -181,7 +185,7 @@ header {
     }
 }
 
-@media (max-width: map-get($grid-breakpoints, "sm")) {
+@include media-breakpoint-down(sm) {
 
     header {
 

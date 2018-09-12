@@ -4,6 +4,8 @@ $(document).ready(function() {
 	
 	$("#footer").load("footer.html");
 
+	$("#block-urbagesa-pharmacies").load("block-urbagesa-pharmacies.html");
+
 	$("[data-dinaanim]").each(function () {
 
 		var $this = $(this);

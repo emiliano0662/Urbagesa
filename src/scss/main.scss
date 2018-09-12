@@ -46,7 +46,15 @@
 @import "owl-carousel/owlCarousel";
 @import "dinaAnim/dina_anim";
 
-@import "custom/global";
+@import "custom/variables";
 @import "custom/header";
 @import "custom/footer";
-@import "custom/home";
+@import "custom/block_banner";
+@import "custom/block_urbagesa_pharmacies";
+@import "custom/block_pharmacies";
+@import "custom/block_title";
+@import "custom/block_pharmacies_list";
+@import "custom/block_pharmacies_detail";
+@import "custom/block_form_contact";
+@import "custom/block_pharmacies_buy_sell";
+@import "custom/block_other_services";

@@ -1,0 +1,106 @@
+.block-form-contact {
+    padding: 0px 10px;
+
+    .form-text-top {
+        margin-bottom: 45px;
+
+        h2 {
+            margin: 0px 0px 15px 0px;
+            text-align: justify;
+            line-height: 22px;
+            font-weight: 600;
+            font-size: 23px;
+            color: #2D3738;
+        }
+
+        p {
+            margin: 0px;
+            line-height: 22px;
+            font-size: 16px;
+            color: #000000;
+
+            a {
+                font-weight: 700;
+                color: #000000;
+            }
+        }
+
+        small {
+            margin: 0px;
+            line-height: 16px;
+            font-size: 14px;
+            color: #9B9B9B;
+        }
+    }
+
+    .form-group {
+
+        .form-control {
+            height: 43px;
+            border: none;
+            font-size: 13px;
+            box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.12);
+            background-color: #F7F7F7;
+            -webkit-border-radius: 0px;
+            -moz-border-radius: 0px;
+            border-radius: 0px;
+        }
+
+        &.form-check-valid {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+
+            label {
+                margin: 0px;
+                line-height: 16px;
+                font-size: 14px;
+                color: #4A4A4A;	
+                
+                span {
+                    font-family: 'Roboto', sans-serif;
+                    line-height: 22px;
+                    font-weight: 300;
+                    font-size: 19px;
+                    color: $primary-color-red;
+                }
+            }
+        }
+
+        &.form-check {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+
+            .form-check-label {
+                line-height: 16px;
+                font-size: 14px;
+                color: #4A4A4A;
+
+                a {
+                    text-decoration: underline;
+                    font-size: 14px;
+                    color: #4A4A4A;
+                }
+            }
+        }
+
+        .btn-primary {
+            padding: .6rem 3.5rem;
+            text-transform: uppercase;
+            line-height: 18px;
+            font-size: 15px;
+            color: #FFFFFF;
+            border-color: $primary-color-red;
+            background-color: $primary-color-red;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 25px;
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+
+    .block-form-contact {
+        padding: 10px;
+    }
+}

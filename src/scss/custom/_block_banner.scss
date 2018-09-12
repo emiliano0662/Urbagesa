@@ -1,5 +1,5 @@
-.home-banner {
-    margin-top: 20px;
+.block-banner {
+    margin-top: $section-margin-top;
 
     .content-bg {
         padding: 40px 100px;
@@ -32,8 +32,8 @@
                 line-height: 18px;
                 font-size: 15px;
                 color: #FFF;
-                border-color: #B90118;
-                background-color: #B90118;
+                border-color: $primary-color-red;
+                background-color: $primary-color-red;
                 -webkit-border-radius: 17px;
                 -moz-border-radius: 17px;
                 border-radius: 17px;
@@ -76,22 +76,9 @@
     }
 }
 
-.home-pharmacies {
-    
-    .content-bg {
-        padding: 15px 22px 0px 22px;
-        background-color: #FFF;
+@include media-breakpoint-down(md) {
 
-        .col-12 {
-            padding-right: 8px;
-            padding-left: 8px;
-        }
-    }
-}
-
-@media (max-width: map-get($grid-breakpoints, "md")) {
-
-    .home-banner {
+    .block-banner {
 
         .content-bg {
             padding: 40px 20px;
@@ -105,9 +92,9 @@
     }
 }
 
-@media (max-width: map-get($grid-breakpoints, "sm")) {
+@include media-breakpoint-down(sm) {
 
-    .home-banner {
+    .block-banner {
 
         .content-bg {
             padding: 30px 20px;

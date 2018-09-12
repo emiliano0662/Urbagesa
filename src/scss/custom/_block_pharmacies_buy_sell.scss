@@ -1,0 +1,60 @@
+.block-pharmacies-buy-sell {
+    
+    .content-bg {
+        padding: 35px 15px 45px 15px;
+        background-color: #FFF;
+
+        .content-text {
+            padding: 0px 15px;
+
+            h1 {
+                margin: 0px 0px 35px 0px;
+                text-transform: uppercase;
+                line-height: 30px;
+                font-weight: 900;
+                font-size: 25px;
+                color: #2D3738;
+            }
+
+            p {
+                margin: 0px 0px 40px 0px;
+                line-height: 22px;
+                font-size: 16px;
+                color: #000000;
+            }
+
+            ul {
+                margin-bottom: 40px;
+                list-style: none;
+                padding-left: 0px;
+                
+                li {
+                    margin-bottom: 22px;
+                    padding-left: 45px;
+                    background: transparent url('../img/icon-check-list.jpg') left 4px / 25px auto no-repeat;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+
+    .block-pharmacies-buy-sell {
+    
+        .content-bg {
+
+            .content-text {
+                padding: 0px 5px;
+
+                ul {
+                    
+                    li {
+                        padding-left: 35px;
+                        background: transparent url('../img/icon-check-list.jpg') left 4px / 20px auto no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}

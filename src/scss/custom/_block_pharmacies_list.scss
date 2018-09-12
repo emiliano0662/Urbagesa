@@ -1,0 +1,144 @@
+.block-pharmacies-list {
+
+    .content-bg {
+        padding: 20px;
+        background-color: #FFF;
+
+        h2 {
+            margin: 10px 0px 22px 0px;
+            text-transform: uppercase;
+            line-height: 30px;
+            font-weight: 900;
+            font-size: 25px;
+            color: #2D3738;
+        }
+
+        .content-items-pharmacies-list {
+            margin-bottom: 18px;
+            padding: 25px 20px 20px 20px;
+            border: 1px solid #E3E3E3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .pounter-content {
+                width: 100%;
+                text-decoration: none;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+
+                h4 {
+                    margin: 0px;
+                    line-height: 17px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #9B9B9B;
+                }
+
+                h3 {
+                    margin: 0px;
+                    line-height: 16px;
+                    font-size: 16px;
+                    color: #000000;
+                    
+                    span {
+                        text-transform: uppercase;
+                        line-height: 16px;
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: #9B9B9B;	
+                    }
+                }
+
+                p {
+                    margin: 20px 0px 20px 0px;
+                    line-height: 22px;
+                    font-weight: 600;
+                    font-size: 23px;
+                    color: #2D3738;
+                }
+
+                h5 {
+                    line-height: 24px;
+                    letter-spacing: -0.38px;
+                    font-size: 20px;
+                    color: #212529;
+                    opacity: 0.9;
+
+                    b {
+                        font-family: 'Roboto', sans-serif;
+                        line-height: 22px;
+                        font-weight: 900;
+                        font-size: 19px;
+                        color: $primary-color-red;
+                    }
+                }
+            }
+
+            .pounter-content-hover {
+                position: absolute;
+                padding: 12px 20px;
+                border: 1px solid #A0A0A0;
+                background-color: rgba(255,255,255,0.8);
+                -webkit-border-radius: 9px;
+                -moz-border-radius: 9px;
+                border-radius: 9px;
+                display: none;
+
+                .fa {
+                    font-size: 30px;
+                    color: #a0a0a0;
+                }
+            }
+
+            &:hover {
+                box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+                background-color: rgba(179,179,179,0.2);
+
+                .pounter-content-hover {
+                    display: block;
+                }
+            }
+        }
+        
+        .pagination {
+            margin: 30px 0px 50px 0px;
+
+            .page-item {
+                
+                .page-link {
+                    margin: 0px 5px;
+                    padding: .4rem .8rem;
+                    border: none;
+                    font-family: 'Roboto', sans-serif;
+                    line-height: 22px;            
+                    font-size: 16px;
+                    color: #9B9B9B;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    border-radius: 50%;
+                }
+
+                &.type-one,
+                &.type-two {
+
+                    .page-link {
+                        margin: 0px;
+                        font-size: 13px;
+                    }
+                }
+
+                &.active {
+
+                    .page-link {
+                        color: #FFF;
+                        background-color: #B90118;
+                    }
+                }
+            }
+        }
+    }
+}
